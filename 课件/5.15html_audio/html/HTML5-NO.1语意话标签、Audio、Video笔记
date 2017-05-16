@@ -1,0 +1,52 @@
+HTML5-NO.1语意话标签、Audio、Video笔记
+	简介：之前 web application (web应用程序) 
+		语意化标签
+		性能&集成
+			workers
+			history API
+			XMLHTTPrequest
+			requestAnimationFrame
+			全屏事件
+		连通性
+			web socket
+			webRTC
+			server sent events 
+		离线&存储
+			应用混存
+			离线在线事件
+			数据持久化
+				indexedDB
+				webSQL
+				storage
+		多媒体
+			音视频的API
+			摄像头API
+		设备访问
+			Camera API
+			检测设备方向
+			定位
+		样式
+			选择器
+			变形
+			动画
+		3D图像&效果
+			canvas
+			svg
+	audio:用于播放音频
+		属性：
+			src:指定资源文件路径
+			controls:用于显示 音频显示控件（开始暂停音量...）
+			autoplay:自动播放
+			loop：循环播放
+			duration：音频的总时长 单位：秒
+			currentTime：当前播放的时间（当前播放的位置）单位：秒
+			muted：设置是否静音
+		方法：
+			play:用于播放
+			pause:暂停
+		事件：
+			loadedmetadata：加载完元数据之后调用的方法
+			ended：可以监听 音频是否播放完成
+		作业：音频播放器：播放 暂停 调节音量 快进 设置循环播放、随机播放、单曲循环 在界面上需要显示 当前正在播放的时间 当前的音量 总时长 （歌词《正则表达式》）
+		明天：除了audio video 拖拽事件 文件读取（FileReader）
+

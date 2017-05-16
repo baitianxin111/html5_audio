@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--注意引用的问题，先引入模块化功能函数的文件，再引入具体的函数功能文件-->
+		<script src="app.js/audioplay.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/audio.js"></script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			header{
+				width: 400px;
+				height: 300px;
+				margin: 50px auto;
+				border: 1px solid red;
+			}
+			button{
+				margin-left: 10px;
+			}
+			 
+		</style>
+	</head>
+	<body>
+		<header>
+			<meta charset="utf-8"/>
+			<title></title>
+			<audio src="宋冬野 - 董小姐.mp3" id="audioPlayer1" controls="controls" loop="loop"   ></audio>
+			<audio src="Need You Now.mp3" id="audioPlayer2" controls></audio>
+			<br />
+			 当前音量：<p id="showvolume"></p>
+			<br />
+			<input type="range" class="volume" name="" id="" value="100" min="0" max="100" />
+			<br />
+			<!--<button id="fast">快进</button>-->
+			快进： <div id="fast">></div>
+			<!--快进：<input type="range" class="fast" value="0" min="0" max="100"/>-->
+			<br />
+			当前播放时间:<p id="time"></p>
+			总时长:<p id="length"></p>
+			<button class="btn">play</button>
+			
+			<button id="loop">单曲循环</button>
+			<button id="xunhuan">循环循环</button>
+			<button id="suiji">随机循环</button>
+		</header>
+		<!--自动播放-->
+			<!--<audio src="Need You Now.mp3" autoplay loop></audio>-->
+			
+		
+		<br />
+		<input type="range" class="volume" name="" id="" value="100" min="0" max="1" />
+		<br />
+		<button class="btn">play</button>
+	</body>
+	 
+</html>

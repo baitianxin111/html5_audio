@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/标签练习.css"/>
+		<title></title>
+	</head>
+	<body>
+		<article>
+			 <header>
+		 	 这是文章的头
+		 </header>
+		<section>
+			<input id="rang" type="range" min="1" max="10"/>
+			<input class="color" type="color" name="" id="" value="" />
+			<input type="email" name="" id="" value="" />
+			<input type="number" name="" id="" value="" />
+			<span id="">
+				
+			</span>
+			<a href="" download=""></a>
+			<br />
+			<mark>这是一个小标记</mark>
+			<div id="edit" contenteditable="true">
+				wfregrfgtr
+			</div>
+			<!--controls用于显示音频控件的-->
+			<audio src="Need You Now.mp3" controls></audio>
+		</section>
+		</article>
+		<!--底部的书写-->
+		<footer>底部的书写</footer>
+	</body>
+	<script type="text/javascript">
+//		document.querySelector('#rang').onchange=function(){
+//			console.log(this.value);
+//		};
+//		document.querySelector('.color')
+function getInputViewSelect(selector){
+	document.querySelector(selector).onchange=function(){
+			console.log(this.value);
+		};
+};
+	getInputViewSelect('.color');
+	</script>
+</html>
